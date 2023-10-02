@@ -1,58 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Twitte</title>
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <header>
-        <figure>
-            <img src="./img/bird 1.svg" alt="">
-        </figure>
-        <nav>
-            <ul>
-                <li>
-                    <img src="./img/Home.png" alt="">
-                    <a href="#">Página Inicial</a>
-                </li>
-                <li>
-                    <img src="./img/Hashtag.png" alt="">
-                    <a href="#">Explorar</a>
-                </li>
-                <li>
-                    <img src="./img/Notification.png" alt="">
-                    <a href="#">Notificações</a>
-                </li>
-                <li>
-                    <img src="./img/Group.png" alt="">
-                    <a href="#">Mensagens</a>
-                </li>
-                <li>
-                    <img src="./img/Group (1).png" alt="">
-                    <a href="#">Itens Salvos</a>
-                </li>
-                <li>
-                    <img src="./img/Group (2).png" alt="">
-                    <a href="#">Listas</a>
-                </li>
-                <li>
-                    <img src="./img/ProfilePic (1).png" alt="">
-                    <a href="#">Perfil</a>
-                </li>
-                <li>
-                    <img src="./img/Group (3).png" alt="">
-                    <a href="#">Mais</a>
-                </li>
-            </ul>
-        </nav>
+    <div class="container">
 
-    </header>
+        <header class="menu">
+            <figure class="image-logo">
+                <img src="./img/bird 1.svg" alt="">
+            </figure>
+            <nav>
+                <ul class="list">
+                    <li class="list-item">
+                        <img src="./img/Home.png" alt="">
+                        <a href="" id="first-page">Página Inicial</a>
+                    </li>
+                    <li class="list-item">
+                        <img src="./img/Hashtag.png" alt="">
+                        <a href="#">Explorar</a>
+                    </li>
+                    <li class="list-item">
+                        <img src="./img/Notification.png" alt="">
+                        <a href="#">Notificações</a>
+                    </li>
+                    <li class="list-item">
+                        <img src="./img/Group.png" alt="">
+                        <a href="#">Mensagens</a>
+                    </li>
+                    <li class="list-item">
+                        <img src="./img/Group (1).png" alt="">
+                        <a href="#">Itens Salvos</a>
+                    </li>
+                    <li class="list-item">
+                        <img src="./img/Group (2).png" alt="">
+                        <a href="#">Listas</a>
+                    </li class="list-item">
+                    <li class="list-item">
+                        <img src="./img/ProfilePic (1).png" alt="">
+                        <a href="#">Perfil</a>
+                    </li>
+                    <li class="list-item">
+                        <img src="./img/Group (3).png" alt="">
+                        <a href="#">Mais</a>
+                    </li>
+                </ul>
+            </nav>
 
-    <main>
+        </header>
+
+        <main class="feedContainer">
+            <h3 class="title-main">Home</h3>
+
+            <form action="" class="form-box">
+                <textarea name="textTweet" placeholder="O que esta acontecendo? "></textarea>
+                <button>Tweetar</button>
+            </form>
+
+            <section class="feed">
+                <ul class="list-tweet">
+                    <li class="tweets">
+                        <img src="./img/ProfilePic.png" alt="Daniel">
+                        <div class="tweet-container">
+                            <div class="textPerfil">
+                                <h2>Jotas</h2>
+                                <span>@JotasDeV 14s</span>
+                            </div>
+                            <p>MAIS DE 1 MILHÃO DE VAGAS! Artigo da McKinsey aponta que, até 2030, o Brasil terá um
+                                gargalo de 1 mi profissionais de tecnologia. É hora de se preparar... </p>
+                        </div>
+                    </li>
+                    <li class="tweets">
+                        <img src="./img/ProfilePic (2).png" alt="Daniel">
+                        <div class="tweet-container">
+                            <div class="textPerfil">
+                                <h2>Will</h2>
+                                <span>@WillBolsaDeValores 14s</span>
+                            </div>
+                            <p>"A persistência é a chave para alcançar seus sonhos. Nunca desista! "💪✨ <p class="hashtag">#Persistência #Sonhos</p></p>
+                        </div>
+                    </li>
+                    <li class="tweets">
+                        <img src="./img/ProfilePic.png" alt="Daniel">
+                        <div class="tweet-container">
+                            <div class="textPerfil">
+                                <h2>Jotas</h2>
+                                <span>@JotasDeV 14s</span>
+                            </div>
+                            <p>"Aprenda com o passado, viva o presente e sonhe com o futuro. 🌟 "<p class="hashtag">#Aprender #Viver #Sonhar</p></p>
+                        </div>
+                    </li>
+                 
 
 
+                </ul>
+            </section>
 
-    </main>
-</body>
+
+        </main>
+    </div>
+    <script src="script.js"></script>
+
 </html>
